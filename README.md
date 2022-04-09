@@ -1,2 +1,5 @@
-# Obligatorio-Implementaci-n-de-soluciones-cloud
+#           Obligatorio
+# Implementacion de Soluciones Cloud 
+
+
 Obligatorio 2022

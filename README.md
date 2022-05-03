@@ -1,9 +1,6 @@
 ##                            ![caratula](https://user-images.githubusercontent.com/88108014/166529492-b34d7940-5ea4-45ff-81a5-d28fe380a966.png)
 ##
 
---
-
-
 1. Presentación del problema
 
 La startup “e-shop Services” ha recibido una ronda de inversión para expandir sus operaciones por todo el mundo, haciendo llegar sus servicios de e-commerce y retail, a todo el continente de América. La competencia actualmente está posicionada en la región a la cual se quiere expandir, pero los inversionistas están presionando para que “e-shop Services” expanda su marca ya que de esto depende el seguir invirtiendo. 

@@ -1,12 +1,5 @@
-![caratula](https://user-images.githubusercontent.com/88108014/166529492-b34d7940-5ea4-45ff-81a5-d28fe380a966.png)
-#           Obligatorio
-## Implementacion de Soluciones Cloud      
-
-
-   __Integrantes:__
- * Alexander Ortega
- * Lucas Pereyra 
- * Pablo Gonzalez
+##                            ![caratula](https://user-images.githubusercontent.com/88108014/166529492-b34d7940-5ea4-45ff-81a5-d28fe380a966.png)
+##
 
 --
 

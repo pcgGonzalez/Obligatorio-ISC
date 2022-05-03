@@ -1,6 +1,12 @@
 #           Obligatorio
 # Implementacion de Soluciones Cloud 
 
+. Integrantes: 
+ * Alexander Ortega
+ * Lucas Pereyra 
+ * Pablo Gonzalez
+
+
 1. Presentación del problema
 
 La startup “e-shop Services” ha recibido una ronda de inversión para expandir sus operaciones por todo el mundo, haciendo llegar sus servicios de e-commerce y retail, a todo el continente de América. La competencia actualmente está posicionada en la región a la cual se quiere expandir, pero los inversionistas están presionando para que “e-shop Services” expanda su marca ya que de esto depende el seguir invirtiendo. 
@@ -34,8 +40,5 @@ diagrama de AWS. Se recomienda usar draw.io que contiene los templates necesario
 para este tipo de diagrama. El mismo deberá incluir el networking a implementar.
 
 
-
-
-
-
 _Obligatorio 2022_
+

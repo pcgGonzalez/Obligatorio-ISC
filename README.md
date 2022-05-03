@@ -1,11 +1,13 @@
 #           Obligatorio
 ## Implementacion de Soluciones Cloud 
 
-   __Integrantes__
+   __Integrantes:__
  * Alexander Ortega
  * Lucas Pereyra 
  * Pablo Gonzalez
 
+--
+--
 
 1. Presentación del problema
 

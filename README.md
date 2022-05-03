@@ -1,7 +1,7 @@
 #           Obligatorio
-# Implementacion de Soluciones Cloud 
+## Implementacion de Soluciones Cloud 
 
-. Integrantes: 
+   __Integrantes__
  * Alexander Ortega
  * Lucas Pereyra 
  * Pablo Gonzalez

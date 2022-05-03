@@ -7,7 +7,7 @@
  * Pablo Gonzalez
 
 --
---
+
 
 1. Presentación del problema
 

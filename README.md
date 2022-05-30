@@ -1,5 +1,4 @@
-##                            ![caratula](https://user-images.githubusercontent.com/88108014/166529492-b34d7940-5ea4-45ff-81a5-d28fe380a966.png)
-##
+## ![Captura](https://user-images.githubusercontent.com/88108014/171061048-dc628b45-1269-4cb8-b5ed-6595bcc5a508.PNG)##
 
 1. Presentación del problema
 

@@ -34,5 +34,8 @@ diagrama de AWS. Se recomienda usar draw.io que contiene los templates necesario
 para este tipo de diagrama. El mismo deberá incluir el networking a implementar.
 
 
-_Obligatorio 2022_
 
+
+
+_Obligatorio 2022_
+_Fecha de entrega 28/06/2022_

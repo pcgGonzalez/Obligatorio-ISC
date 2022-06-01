@@ -39,3 +39,9 @@ para este tipo de diagrama. El mismo deberá incluir el networking a implementar
 
 _Obligatorio 2022_
 _Fecha de entrega 28/06/2022_
+
+1. crear una EC2
+2. Instalar docker y docker-compose && git
+3. Clonar el repo del obligatorio
+4. Generar un docker-compose.yml que genere todas las imagenes de los Dockerfiles
+5. Correr ya sea con docker swarm o con docker run nomas cada contenedor

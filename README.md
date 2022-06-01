@@ -40,7 +40,7 @@ para este tipo de diagrama. El mismo deberá incluir el networking a implementar
 _Obligatorio 2022_
 _Fecha de entrega 28/06/2022_
 
-###Pruebas 
+### Pruebas 
 
 1. crear una EC2
 2. Instalar docker y docker-compose && git

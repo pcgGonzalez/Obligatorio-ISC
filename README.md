@@ -1,6 +1,10 @@
 ## ![Captura](https://user-images.githubusercontent.com/88108014/171061048-dc628b45-1269-4cb8-b5ed-6595bcc5a508.PNG)
 ##
 
+![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
+
+
+
 1. Presentación del problema
 
 La startup “e-shop Services” ha recibido una ronda de inversión para expandir sus operaciones por todo el mundo, haciendo llegar sus servicios de e-commerce y retail, a todo el continente de América. La competencia actualmente está posicionada en la región a la cual se quiere expandir, pero los inversionistas están presionando para que “e-shop Services” expanda su marca ya que de esto depende el seguir invirtiendo. 

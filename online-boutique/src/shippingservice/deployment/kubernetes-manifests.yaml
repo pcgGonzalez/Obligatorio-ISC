@@ -4,6 +4,7 @@ kind: Deployment
 metadata:
   name: shippingservice
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: shippingservice
@@ -15,7 +16,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: <IMAGE:TAG>
+        image: obligatorioisc/shippingservice:v1
         ports:
         - containerPort: 50051
         env:

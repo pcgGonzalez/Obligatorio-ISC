@@ -4,6 +4,7 @@ kind: Deployment
 metadata:
   name: productcatalogservice
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: productcatalogservice
@@ -16,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: <IMAGE:TAG>
+        image: obligatorioisc/productcatalogoservice:v1
         ports:
         - containerPort: 3550
         env:

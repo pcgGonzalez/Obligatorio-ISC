@@ -8,7 +8,7 @@
 
 _La empresa “e-shop Services” nos ha contratado para desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise_
 
-## Resumen de la solución 🚀
+## Resumen de la solución :nube:
 
 La solución fue montar una infraestructura en AWS con nuevas capacidades tecnológicas y de innovación, teniendo mayor agilidad en la operación, ambientes bajo demanda y capacidad de innovación, así como nuevas funcionalidades sin altos niveles de inversión.
 

@@ -5,13 +5,11 @@
 
 
 - Presentación del problema
+_La empresa “e-shop Services” nos ha contratado para desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise_
 
-_Resumen de la solución_
-
-La empresa “e-shop Services” nos ha contratado para desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise.
+- Resumen de la solución
 
 La solución fue montar una infraestructura en AWS con nuevas capacidades tecnológicas y de innovación, teniendo mayor agilidad en la operación, ambientes bajo demanda y capacidad de innovación, así como nuevas funcionalidades sin altos niveles de inversión.
-
 
 Para que su servicio de e-commerce pueda expandirse por todo el mundo y se adapte mejor con la arquitectura de microservicios realizaremos la migración de estas cargas de trabajo a través de arquitecturas de hardware a la nube de a AWS 
 utilizando una Infraestructura como servicio en la cual trabajaremos con docker y kubernetes teniendo así una alta disponibilidad mediante grupos de auto escalamiento, Elastic Load Balancer, desacoplamiento de almacenamiento persistente y de alto desempeño mediante Elastic File System EFS.

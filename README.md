@@ -6,10 +6,14 @@
 
 - Presentación del problema
 
-_Resumen_
+_Resumen de la solución_
 
-La startup “e-shop Services” ha recibido una ronda de inversión para expandir sus operaciones por todo el mundo, haciendo llegar sus servicios de e-commerce y retail, a todo el continente de América. La competencia actualmente está posicionada en la región a la cual se quiere expandir, pero los inversionistas están presionando para que “e-shop Services” expanda su marca ya que de esto depende el seguir invirtiendo. 
+La empresa “e-shop Services” nos ha contratado para desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise.
+
+La solución fue montar una infraestructura en AWS con nuevas capacidades tecnológicas y de innovación, teniendo mayor agilidad en la operación, ambientes bajo demanda y capacidad de innovación, así como nuevas funcionalidades sin altos niveles de inversión.
 
 
-Se ha contratado a la consultora BitBeat para modernizar y desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise. Una célula de desarrollo trabajó en la implementación del e-commerce basado en una arquitectura de microservicios para correr sobre containers cuyo ciclo de integración continua ya se encuentra configurado y la solución ya se encuentra disponible para desplegar por parte del equipo de DevOps.
+Para que su servicio de e-commerce pueda expandirse por todo el mundo y se adapte mejor con la arquitectura de microservicios realizaremos la migración de estas cargas de trabajo a través de arquitecturas de hardware a la nube de a AWS 
+utilizando una Infraestructura como servicio en la cual trabajaremos con docker y kubernetes teniendo así una alta disponibilidad mediante grupos de auto escalamiento, Elastic Load Balancer, desacoplamiento de almacenamiento persistente y de alto desempeño mediante Elastic File System EFS.
+Creamos una instancia EC2 la cual será el equipo bastión y se configura el bloque userdata para que se instalen todos los componentes que vamos a utilizar para el despliegue.
 

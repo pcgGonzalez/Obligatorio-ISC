@@ -2,8 +2,6 @@
 
 ![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
 
-
-
 ## Presentación del problema
 
 _La empresa “e-shop Services” nos ha contratado para desplegar la arquitectura e infraestructura de su aplicación que actualmente corre en un datacenter on-premise_

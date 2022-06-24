@@ -1,5 +1,4 @@
-## ![Captura](https://user-images.githubusercontent.com/88108014/171061048-dc628b45-1269-4cb8-b5ed-6595bcc5a508.PNG)
-##
+![caratula](https://user-images.githubusercontent.com/88108014/175550159-21bfc6ce-abe4-4990-8604-576c61fbfcdb.png)
 
 ![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
 

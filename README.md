@@ -20,5 +20,6 @@ Al mismo tendremos que realizarle algunas modificaciones para poder desplegar si
 Se realiza el buildeo de todos los microservicios que necesitamos para que la web funcione correctamente y se modifican los deployment.
 
 - Arquitectura Micro-servicios
+
 ![MICRO](https://user-images.githubusercontent.com/88108014/175645251-bcdcccc4-185e-49f7-88cc-06be6a5c5f31.png)
 

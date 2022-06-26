@@ -29,7 +29,7 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 ###################################################################################################################################################
 ###################SE BAJA LA IMAGEN DEL CARTSERVICE DE DOCKERHUB, SE LOGUEA EN AWS Y LUEGO LA SUBE AL REPO EN ECR#################################
-sudo docker login --username aortega91 --password clave.2022
+sudo docker login --username $DOCKER_USER --password $DOCKER_PWD
 sudo docker pull obligatorioisc/cartservice:v1
 aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 007518468067.dkr.ecr.us-east-1.amazonaws.com
 sudo docker tag obligatorioisc/cartservice:v1 007518468067.dkr.ecr.us-east-1.amazonaws.com/online-boutique:cartservice

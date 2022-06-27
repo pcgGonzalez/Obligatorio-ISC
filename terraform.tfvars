@@ -4,7 +4,7 @@ aws_secret_access_key	= "CLAVE AWS"
 
 aws_session_token	= "EL TOKEN"
 
-aws_region   = "us-region-1"
+aws_region   = "us-east-1"
 
 git_user		= "pepe"
 git_password		= "pepe"

@@ -1,7 +1,7 @@
 
 
 resource "aws_security_group" "pivot-sg" {
-  name   = "ms-sg"
+  name   = "pivot-sg"
   vpc_id = aws_vpc.vpc-ms.id
   ingress {
     from_port   = 22

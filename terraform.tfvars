@@ -11,3 +11,5 @@ git_password		= "pepe"
 
 docker_user     = "USUARIO DE DOCKER HUB"
 docker_pwd      = "CLAVE DE DOCKER HUB"
+
+key             = "./aortega.pem"

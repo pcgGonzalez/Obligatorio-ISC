@@ -1,6 +1,6 @@
 
 
-resource "aws_security_group" "ms-sg" {
+resource "aws_security_group" "pivot-sg" {
   name   = "ms-sg"
   vpc_id = aws_vpc.vpc-ms.id
   ingress {

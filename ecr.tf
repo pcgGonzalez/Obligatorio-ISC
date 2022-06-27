@@ -8,3 +8,8 @@ resource "aws_ecr_repository" "online-boutique" {
     scan_on_push = true
   }
 }
+output "repository_url" {
+  description = "URL del Repositorio en ECR llamado online-boutique"
+  value = "aws_ecr_repository.online-boutique.repository_url"
+  }
+

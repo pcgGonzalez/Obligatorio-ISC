@@ -1,5 +1,8 @@
 variable "git_user" {}
 variable "git_password" {}
+variable "docker_user" {}
+variable "docker_pwd" {}
+variable "key" {}
 
 resource "aws_instance" "IMG-Builder" {
   ami                    = "ami-09a41e26df464c548"
@@ -7,10 +10,10 @@ resource "aws_instance" "IMG-Builder" {
   key_name		 = "aortega"
   root_block_device {
     volume_type 	 = "gp3"
-    volume_size		 = 30
+    volume_size		 = 40
   }
-  vpc_security_group_ids = [aws_security_group.ms-sg.id]
-  subnet_id = aws_subnet.subnet-ms.id
+  vpc_security_group_ids = [aws_security_group.pivot-sg.id]
+  subnet_id = aws_subnet.subnet-pivot.id
   associate_public_ip_address = true
   tags = {
     Name = "IMG-Builder"
@@ -39,7 +42,7 @@ resource "aws_instance" "IMG-Builder" {
   connection {
     type     = "ssh"
     user     = "admin"
-    private_key = file("./*.pem")
+    private_key = file("${var.key}")
     host = self.public_ip
   }
 

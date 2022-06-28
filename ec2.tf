@@ -7,7 +7,7 @@ variable "aws_account" {}
 resource "aws_instance" "IMG-Builder" {
   ami                    = "ami-09a41e26df464c548"
   instance_type          = "t2.micro"
-  key_name		 = "aortega"
+  key_name		 = "${var.key}"
   depends_on = [aws_eks_cluster.cluster-eks, aws_eks_node_group.worker-node-group]
   root_block_device {
     volume_type 	 = "gp3"

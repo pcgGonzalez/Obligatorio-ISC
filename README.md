@@ -62,7 +62,7 @@ Repositorio en el cual se trabaja:[aqui](https://github.com/pcgGonzalez/Obligato
 10. key - el nombre de la key (ya generada en AWS, por ejemplo vockey)
 11. key_location - la ubicación del archivo .pem por ejemplo vockey.pem debe estar en el equipo desde donde se correrá el terraform apply y aclarar el  directorio en esta variable
 
-### Files :file_folder:
+### Files 
 
 El repositorio consta de los siguientes files:
 * [Cluster EKS](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf): Realiza el despliegue del cluster EKS, los workernodes y se asocia con las subnet y el rol IAM a utilizarse. Debido a que fue desplegado en un ambiente AWS Academy, el rol a utilizar debe ser "LabRole".

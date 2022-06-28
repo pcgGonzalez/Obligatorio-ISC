@@ -42,6 +42,11 @@ Repositorio en el cual se trabaja:[aqui](https://github.com/pcgGonzalez/Obligato
 * Tener instalado Terraform
 * Cuenta de AWS
 * AWS CLI
+* Cuenta en Dockerhub
+* Cuenta en Github
+* Archivo .pem descargado localmente
+
+*Se deben pasar las credenciales de las cuentas (AWS CLI, Github y Dockerhub) para que la instancia EC2 pueda realizar la conexión y ejecutar el script correctamente.*
 
 El repositorio consta de los siguientes files:
 * [Cluster EKS](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf): Realiza el despliegue del cluster EKS, los workernodes y se asocia con las subnet y el rol IAM a utilizarse. Debido a que fue desplegado en un ambiente AWS Academy, el rol a utilizar debe ser "LabRole".

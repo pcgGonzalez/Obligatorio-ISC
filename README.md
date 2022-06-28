@@ -125,6 +125,8 @@ Con la versión de AWS educate solo nos permite usar el rol "LabRole" en el Clus
 
 ![Diagramahtml drawio](https://user-images.githubusercontent.com/69149459/176176252-04e9abd0-d84a-4317-a738-08737cbd00ff.png)
 
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/88108014/176305434-c06b31bb-71d0-445a-8b15-be437f113c1f.png)
+
 
 ###  Prueba de funcionamiento de Online Boutique en la infraestructura: :clapper:
 

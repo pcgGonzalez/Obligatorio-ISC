@@ -33,7 +33,7 @@ Se realiza el buildeo de todos los microservicios que necesitamos para que la we
 
 ![MICRO](https://user-images.githubusercontent.com/88108014/175645251-bcdcccc4-185e-49f7-88cc-06be6a5c5f31.png)
 
-### Equipo Devops
+### Equipo Devops :gear:
 Al momento de comenzar a trabajar con el despliegue de la infrastructura lo primero que se realiza es un repositorio en github donde todo el equipo devops va tener los permisos necesarios para poder implementar sus cambios y trabajar en conjunto en forma actualizada. 
 Repositorio en el cual se trabaja:[aqui](https://github.com/pcgGonzalez/Obligatorio-ISC)
 

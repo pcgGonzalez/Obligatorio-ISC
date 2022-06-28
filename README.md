@@ -135,8 +135,8 @@ Con la versión de AWS educate solo nos permite usar el rol "LabRole" en el Clus
 
 ![prueb (1)](https://user-images.githubusercontent.com/88108014/176224270-3c63ac11-34ed-48a2-af7e-374db0eb125e.gif)
 
+:octocat:
 
 
 
-
-	:octocat:
+	

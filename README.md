@@ -73,7 +73,7 @@ El repositorio consta de los siguientes files:
 * [start_script](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/start_script.sh): Este script sera alojado en la instancia EC2 que oficia de "pivot". El fin de este script es instalar el software necesario para bajarse el repositorio de git con los manifiestos de Kubernetes, crear las imágenes de Docker, agregar la imagen y tag a los manifiestos de Kubernetes, pushearlas a ECR, y desplegar los pods en EKS basándose en los manifiestos modificados. 
 * [terraform.tfvars](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/terraform.tfvars): Aquí se definen las variables de loguin a AWS, a git, a Dockerhub y la ruta del archivo .pem.
 
-Por lo tanto, en resumen se crearan los componentes de AWS:
+Por lo tanto, en resumen se crearan los componentes de AWS: :hammer_and_wrench:
 - [VPC](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
 - [Internet Gateway](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf) 
 - [Subnets](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)

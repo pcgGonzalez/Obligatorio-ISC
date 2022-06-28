@@ -31,9 +31,9 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 ###################SE BAJA LA IMAGEN DEL CARTSERVICE DE DOCKERHUB, SE LOGUEA EN AWS Y LUEGO LA SUBE AL REPO EN ECR#################################
 echo "$DOCKER_PWD" | sudo docker login --username "$DOCKER_USER" --password-stdin
 sudo docker pull obligatorioisc/cartservice:v1
-aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin "$AWS_ACCOUNT".dkr.ecr.us-east-1.amazonaws.com
-sudo docker tag obligatorioisc/cartservice:v1 "$AWS_ACCOUNT".dkr.ecr.us-east-1.amazonaws.com/online-boutique:cartservice
-sudo docker push "$AWS_ACCOUNT".dkr.ecr.us-east-1.amazonaws.com/online-boutique:cartservice
+aws ecr get-login-password --region "$AWS_DEFAULT_REGION" | sudo docker login --username AWS --password-stdin "$AWS_ACCOUNT".dkr.ecr."$AWS_DEFAULT_REGION".amazonaws.com
+sudo docker tag obligatorioisc/cartservice:v1 "$AWS_ACCOUNT".dkr.ecr."$AWS_DEFAULT_REGION".amazonaws.com/online-boutique:cartservice
+sudo docker push "$AWS_ACCOUNT".dkr.ecr."$AWS_DEFAULT_REGION".amazonaws.com/online-boutique:cartservice
 
 ###################################################################################################################################################
 ############CLONADO DEL REPO ONLINE-BOUTIQUE EN LA INSTANCIA#########################
@@ -49,7 +49,7 @@ chmod +x ./kubectl
 mkdir -p "$HOME"/bin && cp ./kubectl "$HOME"/bin/kubectl
 export 'PATH='"$PATH":"$HOME"'/bin'
 echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
-aws eks --region us-east-1 update-kubeconfig --name "eks-cluster"
+aws eks --region "$AWS_DEFAULT_REGION" update-kubeconfig --name "eks-cluster"
 ###################################################################################################################################################
 
 
@@ -58,13 +58,13 @@ aws eks --region us-east-1 update-kubeconfig --name "eks-cluster"
 ###################SE CAMBIAN LOS MANIFESTOS DE KUBERNETES TAMBIEN PARA PODER CONSTRUIR LOS DEPLOYMENTS#################################
 ###################################################################################################################################################
 microservices=$(ls /home/admin/online-boutique/src)
-IMG="$AWS_ACCOUNT.dkr.ecr.us-east-1.amazonaws.com\/online-boutique:"
+IMG="$AWS_ACCOUNT.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com\/online-boutique:"
 
 for ms in $microservices
 do
   sed -i 's/<IMAGE:TAG>/'"$IMG$ms"'/g' online-boutique/src/$ms/deployment/kubernetes-manifests.yaml
   sed -i "6a\  replicas: 2" online-boutique/src/$ms/deployment/kubernetes-manifests.yaml
-  sudo docker build -t "$AWS_ACCOUNT".dkr.ecr.us-east-1.amazonaws.com/online-boutique:"$ms" online-boutique/src/$ms/
-  sudo docker push "$AWS_ACCOUNT".dkr.ecr.us-east-1.amazonaws.com/online-boutique:"$ms"
+  sudo docker build -t "$AWS_ACCOUNT".dkr.ecr."$AWS_DEFAULT_REGION".amazonaws.com/online-boutique:"$ms" online-boutique/src/$ms/
+  sudo docker push "$AWS_ACCOUNT".dkr.ecr."$AWS_DEFAULT_REGION".amazonaws.com/online-boutique:"$ms"
   kubectl create -f online-boutique/src/$ms/deployment/kubernetes-manifests.yaml
 done

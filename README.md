@@ -74,13 +74,13 @@ El repositorio consta de los siguientes files:
 * [terraform.tfvars](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/terraform.tfvars): Aquí se definen las variables de loguin a AWS, a git, a Dockerhub y la ruta del archivo .pem.
 
 Por lo tanto, en resumen se crearan los componentes de AWS: :hammer_and_wrench:
-- [VPC](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Internet Gateway](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf) 
-- [Subnets](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Route-Table](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Security Group](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
-- [Pivot-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
-- [Microservices-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
+- [VPC](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Internet Gateway](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf) 
+- [Subnets](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Route-Table](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Security Group](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
+- [Pivot-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
+- [Microservices-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
 
 Se crean los componentes de Kubernetes/Docker:
 - [eks-cluster](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/cluster_eks.tf)

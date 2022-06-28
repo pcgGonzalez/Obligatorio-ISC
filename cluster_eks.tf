@@ -3,7 +3,7 @@ resource "aws_eks_cluster" "cluster-eks" {
  role_arn = "arn:aws:iam::${var.aws_account}:role/LabRole"
  vpc_config {
   subnet_ids = [aws_subnet.subnet-ms-az-a.id, aws_subnet.subnet-ms-az-b.id]
-  security_group_ids = [aws_security_group.ms-sg.id]
+  security_group_ids = [aws_security_group.Cluster-EKS-sg.id]
  }
 }
 
@@ -15,6 +15,8 @@ resource "aws_eks_node_group" "worker-node-group" {
   node_role_arn  = "arn:aws:iam::${var.aws_account}:role/LabRole"
   subnet_ids   = [aws_subnet.subnet-ms-az-a.id, aws_subnet.subnet-ms-az-b.id]
   instance_types = ["t3.xlarge"]
+  security_group_ids = [aws_security_group.ms-nodes-sg.id]
+  
  
   scaling_config {
    desired_size = 2

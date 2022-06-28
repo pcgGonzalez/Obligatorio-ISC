@@ -17,8 +17,8 @@ resource "aws_security_group" "pivot-sg" {
   }
 }
 
-resource "aws_security_group" "ms-sg" {
-  name   = "microservices-sg"
+resource "aws_security_group" "Cluster-EKS-sg" {
+  name   = "Cluster-EKS-sg"
   vpc_id = aws_vpc.vpc-ms.id
   ingress {
     from_port   = 22
@@ -26,13 +26,18 @@ resource "aws_security_group" "ms-sg" {
     protocol    = "tcp"
     cidr_blocks = ["10.0.0.0/24"]
   }
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  egress {
+}
+
+resource "aws_security_group" "ms-nodes-sg" {
+  name   = "ms-nodes-sg"
+  vpc_id = aws_vpc.vpc-ms.id
+    egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"

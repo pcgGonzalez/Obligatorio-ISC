@@ -3,6 +3,7 @@ resource "aws_eks_cluster" "cluster-eks" {
  role_arn = "arn:aws:iam::${var.aws_account}:role/LabRole"
  vpc_config {
   subnet_ids = [aws_subnet.subnet-ms-az-a.id, aws_subnet.subnet-ms-az-b.id]
+  security_group_ids = [aws_security_group.ms-sg.id]
  }
 }
 

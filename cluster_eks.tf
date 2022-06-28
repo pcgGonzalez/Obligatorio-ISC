@@ -15,9 +15,13 @@ resource "aws_eks_node_group" "worker-node-group" {
   node_role_arn  = "arn:aws:iam::${var.aws_account}:role/LabRole"
   subnet_ids   = [aws_subnet.subnet-ms-az-a.id, aws_subnet.subnet-ms-az-b.id]
   instance_types = ["t3.xlarge"]
-  security_group_ids = [aws_security_group.ms-nodes-sg.id]
-  
- 
+  remote_access {
+    source_security_groups_id = [aws_security_group.ms-nodes-sg.id]
+  }
+  launch_template {
+    name  = "MS-Worker-Node"
+  }
+   
   scaling_config {
    desired_size = 2
    max_size   = 2

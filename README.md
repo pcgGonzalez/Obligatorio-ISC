@@ -98,7 +98,7 @@ Este listado de pasos lo va a hacer con cada uno de los micro servicios asi que 
 
 ### Limitantes con AWS Educate:
 
-Con la versión de AWS educate solo nos permite usar el ARN LabRole en el Cluster EKS, tuvimos que generar una variable para el ID de cuenta de forma que se cambie en el código, aprovechando esta variable también se reutilizó para obtener la URL del ECR, se podría haber hecho con el output de aws_ecr_repository.online-boutique.repository_url pero ya que tuvimos que usar la otra variable, solo cambiando esto ya quedaba creado.
+Con la versión de AWS educate solo nos permite usar el rol "LabRole" en el Cluster EKS, tuvimos que generar una variable donde ingresamos el ID de cuenta de forma que se cambie en el código y complete el ARN donde debe ser definido. Aprovechando esta variable también la reutilizamos para obtener la URL del ECR. Si bien se podría haber hecho con el output de aws_ecr_repository.online-boutique.repository_url aprovechamos el uso de la otra variable para obtener este valor.
 
 ### Diagrama de la arquitectura desplegada:
 

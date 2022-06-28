@@ -58,18 +58,18 @@ El repositorio consta de los siguientes files:
 * [terraform.tfvars](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/terraform.tfvars): Aquí se definen las variables de loguin a AWS, a git, a Dockerhub y la ruta del archivo .pem.
 
 Por lo tanto, en resumen se crearan los componentes de AWS:
-- [VPC](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Internet Gateway](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf) 
-- [Subnets](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Route-Table](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/vpc.tf)
-- [Security Group](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
-- [Pivot-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
-- [Microservices-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/sg.tf)
+- [VPC](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Internet Gateway](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf) 
+- [Subnets](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Route-Table](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/vpc.tf)
+- [Security Group](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
+- [Pivot-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
+- [Microservices-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
 
 Se crean los componentes de Kubernetes/Docker:
-- [eks-cluster](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/cluster_eks.tf)
-- [workernodes](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/cluster_eks.tf)
-- [ECR](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/ecr.tf) 
+- [eks-cluster](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf)
+- [workernodes](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf)
+- [ECR](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/ecr.tf) 
 
 
 Cuando se termina de crear el cluster eks y los workersnodes se comienza con el despliegue de la instancia:
@@ -81,7 +81,7 @@ Se ejecuta el script.sh para aprovisionar la instancia y poder tener todo lo nec
 
 El veneficio de hacer todo desde una instancia de EC2 para construir las imágenes y subirlas además se agregar una capa de seguridad ya que va a quedar como pivot server para poder administrar el Cluster, no tenemos la necesidad de especificar ningún tipo de requisitos de versiones de Terraform, Docker o lo que sea para poder correr nuestro código, sino que la misma instancia se va a encargar que se cumpla con todos los requisitos necesario para el buen funcionamiento del despliegue y que la web funcione correctamente. 
 
-### Lo que va a [instalar](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/documentacion/instalaciones.md) el script.sh:
+### Lo que va a [instalar](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/Documentaci%C3%B3n/instalaciones.md) el script.sh:
 
 1. Hace un apt update
 2. Instala git

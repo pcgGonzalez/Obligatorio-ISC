@@ -1,3 +1,5 @@
+variable "key" {}
+
 resource "aws_eks_cluster" "cluster-eks" {
  name = "eks-cluster"
  role_arn = "arn:aws:iam::${var.aws_account}:role/LabRole"
@@ -17,6 +19,7 @@ resource "aws_eks_node_group" "worker-node-group" {
   instance_types = ["t3.xlarge"]
   remote_access {
     source_security_group_ids = [aws_security_group.ms-nodes-sg.id]
+    ec2_ssh_key = var.key
   }   
   scaling_config {
    desired_size = 2

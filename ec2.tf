@@ -2,15 +2,13 @@ variable "git_user" {}
 variable "git_password" {}
 variable "docker_user" {}
 variable "docker_pwd" {}
-variable "key" {}
+variable "key_location" {}
 variable "aws_account" {}
 resource "aws_instance" "IMG-Builder" {
   ami                    = "ami-09a41e26df464c548"
   instance_type          = "t2.micro"
   key_name		 = "aortega"
-  depends_on = [
-    aws_eks_cluster.cluster-eks
-  ]
+  depends_on = [aws_eks_cluster.cluster-eks, aws_eks_node_group.worker-node-group]
   root_block_device {
     volume_type 	 = "gp3"
     volume_size		 = 40
@@ -24,7 +22,7 @@ resource "aws_instance" "IMG-Builder" {
   connection {
     type     = "ssh"
     user     = "admin"
-    private_key = file("${var.key}")
+    private_key = file("${var.key_location}")
     host = self.public_ip
   }
 

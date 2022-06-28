@@ -14,4 +14,5 @@ git_password		= "papa"
 docker_user     = "pepe"
 docker_pwd      = "mas papa"
 
-key             = "./aortega.pem"
+key             = "aortega"
+key_location    = "./aortega.pem"

@@ -19,7 +19,7 @@ resource "aws_eks_node_group" "worker-node-group" {
     source_security_group_ids = [aws_security_group.ms-nodes-sg.id]
   }
   launch_template {
-    version = aws_launch_template.default_version 
+    version = default_version
     name  = "MS-Worker-Node"
   }
    

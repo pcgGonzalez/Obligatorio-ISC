@@ -3,7 +3,7 @@ variable "git_password" {}
 variable "docker_user" {}
 variable "docker_pwd" {}
 variable "key" {}
-
+variable "aws_account" {}
 resource "aws_instance" "IMG-Builder" {
   ami                    = "ami-09a41e26df464c548"
   instance_type          = "t2.micro"
@@ -33,6 +33,7 @@ resource "aws_instance" "IMG-Builder" {
     destination = "/home/admin/start_script.sh"
   }
 
+
   provisioner "remote-exec" {
     inline = [
       "export AWS_ACCESS_KEY_ID=${var.aws_access_key_id}",
@@ -43,8 +44,15 @@ resource "aws_instance" "IMG-Builder" {
       "export GIT_PWD=${var.git_password}",
       "export DOCKER_USER=${var.docker_user}",
       "export DOCKER_PWD=${var.docker_pwd}",
+      "export AWS_ACCOUNT=${var.aws_account}",
+      "echo $ECR_URL > /home/admin/ecr_repo",
       "chmod +x /home/admin/start_script.sh",
       "/home/admin/start_script.sh",
     ]
   }
+}
+
+
+output "IP_PIVOT" {
+  value = aws_instance.IMG-Builder.public_ip
 }

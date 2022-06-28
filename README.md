@@ -97,7 +97,7 @@ Se ejecuta el script.sh para aprovisionar la instancia y poder tener todo lo nec
 
 El veneficio de hacer todo desde una instancia de EC2 para construir las imágenes y subirlas además se agregar una capa de seguridad ya que va a quedar como pivot server para poder administrar el Cluster, no tenemos la necesidad de especificar ningún tipo de requisitos de versiones de Terraform, Docker o lo que sea para poder correr nuestro código, sino que la misma instancia se va a encargar que se cumpla con todos los requisitos necesario para el buen funcionamiento del despliegue y que la web funcione correctamente. 
 
-### Lo que va a [instalar](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/documentacion/instalaciones.md) el script.sh:
+### Lo que va a [instalar](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/documentacion/instalaciones.md) el script.sh: :pencil:
 
 1. Hace un apt update
 2. Instala git

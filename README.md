@@ -83,13 +83,13 @@ Por lo tanto, en resumen se crearan los componentes de AWS: :hammer_and_wrench:
 - [Microservices-sg](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/sg.tf)
 
 Se crean los componentes de Kubernetes/Docker:
-- [eks-cluster](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/cluster_eks.tf)
-- [workernodes](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/cluster_eks.tf)
-- [ECR](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/ecr.tf) 
+- [eks-cluster](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf)
+- [workernodes](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/cluster_eks.tf)
+- [ECR](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/ecr.tf) 
 
 
 Cuando se termina de crear el cluster eks y los workersnodes se comienza con el despliegue de la instancia:
-- Se le pasa el archivo [start_script.sh](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/aortega/start_script.sh)
+- Se le pasa el archivo [start_script.sh](https://github.com/pcgGonzalez/Obligatorio-ISC/blob/main/start_script.sh)
 - Se le cargan las variables de entorno a la instancia con el provisioner remote_exec
 - Luego se le da permisos de ejecución al archivo start_script.sh
 

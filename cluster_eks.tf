@@ -17,12 +17,7 @@ resource "aws_eks_node_group" "worker-node-group" {
   instance_types = ["t3.xlarge"]
   remote_access {
     source_security_group_ids = [aws_security_group.ms-nodes-sg.id]
-  }
-  launch_template {
-    version = default_version
-    name  = "MS-Worker-Node"
-  }
-   
+  }   
   scaling_config {
    desired_size = 2
    max_size   = 2
